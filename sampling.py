@@ -37,9 +37,11 @@ def gaussian_noise(x, n_samples)->np.ndarray:
     ------------
     x : ndarray
     n_samples : int
+    
+    References
+    ------------
+    researchgate.net/publication/292390585_Unbiasing_the_bootstrap-bootknife_sampling_vs_smoothing
     """
-    # arbitrarily set sigma (see Reference)
-    sigma = 1/np.sqrt(len(x))
-    sigma_squared = np.power(sigma, 2)
-    noise = np.random.normal(0, sigma_squared, n_samples)
+    sigma = np.std(x)/np.sqrt(len(x))
+    noise = np.random.normal(0, sigma, n_samples)
     return noise
