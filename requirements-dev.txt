@@ -1,0 +1,6 @@
+jupyterlab
+matplotlib
+nbval
+numpy
+seaborn
+scipy
