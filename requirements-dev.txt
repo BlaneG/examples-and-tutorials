@@ -2,5 +2,6 @@ jupyterlab
 matplotlib
 nbval
 numpy
+pytest
 seaborn
 scipy
