@@ -1,6 +1,6 @@
 # Examples and tutorials
 
-A collection of technical notebooks to illustrate data analysis concepts.
+A collection of technical notebooks for data analysis.
 
 ## Testing
 pytest and nbval are used to validate that the notebooks are running without any errors:
